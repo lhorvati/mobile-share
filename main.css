@@ -201,7 +201,7 @@
   padding: 16px;
   font-size: 14px;
 }
-.checkbox {
+.checkbox-row {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,7 +216,7 @@
   box-sizing: border-box;
   padding: 0 16px;
 }
-.checkbox .checkbox__box {
+.checkbox-row .checkbox__box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -225,9 +225,46 @@
   justify-content: center;
   align-items: center;
 }
-.checkbox .checkbox__span {
+.checkbox-row .checkbox__span {
   margin-left: 10px;
   font-size: 12px;
+}
+input[type=checkbox] {
+  visibility: hidden;
+}
+.checkbox {
+  width: 16px;
+  position: relative;
+}
+.checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #d6cbcb;
+}
+.checkbox label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url("img/explorer/check.png") no-repeat center;
+  background-size: 12px;
+  top: 0;
+  left: 0;
+}
+.checkbox label:hover::after {
+  opacity: 0.3;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
 }
 .login-body button {
   display: block;
@@ -2184,7 +2221,7 @@ input {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.share-row .checkbox {
+.share-row .checkbox-wrap {
   padding: 0;
   margin-top: 10px;
 }
@@ -2368,7 +2405,7 @@ input {
   background-size: 18px;
 }
 .btn-edit i.caret-down {
-  background: url("img/explorer/arrow-down.png") no-repeat center;
+  background: url("img/explorer/caret-down.png") no-repeat center;
   background-size: 16px;
 }
 .mui-input2 {
