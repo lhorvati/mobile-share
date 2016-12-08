@@ -29,36 +29,36 @@
 
     <!-- Share Bottom ========== -->
     <div class="share-bot">
+        <div class="share-main screen-padding">
 
-        <!-- Share Link Row -->
-        <div class="share-link">
+            <!-- Share Link Row -->
+            <div class="share-link">
 
-            <div class="share-link__button">
-                <div class="share-link__button--text">
-                    Get share link
+                <div class="share-link__button">
+                    <div class="share-link__button--text">
+                        Get share link
+                    </div>
+                    <div class="share-link__button--icon">
+                        
+                    </div>
                 </div>
-                <div class="share-link__button--icon">
-                    
+
+                <div class="share-link__content">
+                    <div class="mui-input2">
+                        <label>Share link:</label>
+                        <input type="text" placeholder="ovdje treba ubacit odgovarajuci link">
+                        <span class="bar"></span>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="share-link__content">
-                <div class="mui-input2">
-                    <label>Share link:</label>
-                    <input type="text" placeholder="ovdje treba ubacit odgovarajuci link">
-                    <span class="bar"></span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Invite People Row -->
-        <div class="invite-people">
-            <div class="mui-input2">
+            <!-- Invite People Row -->
+            
+            <div class="invite-people">
                 <label>Invite people:</label>
-
-                <!-- Share List -->
-                <div class="share-list">
+                
+                <div class="crazy-input-wrap">
                     <div class="share-list-item">
                         <span class="share-list-item__text">jozo@gmail.com</span>
                         <i class="share-list-item__icon"></i>
@@ -67,40 +67,140 @@
                         <span class="share-list-item__text">mate@gmail.com</span>
                         <i class="share-list-item__icon"></i>
                     </div>
+
+                    <div class="share-list-item">
+                        <span class="share-list-item__text">jozo@gmail.com</span>
+                        <i class="share-list-item__icon"></i>
+                    </div>
+                    <div class="share-list-item">
+                        <span class="share-list-item__text">jozo@gmail.com</span>
+                        <i class="share-list-item__icon"></i>
+                    </div>
+
+
+                    <input type="text" placeholder="Enter email address">
+                    <span class="bar"></span>
                 </div>
+
+            </div>
                 
-                <input type="text" placeholder="Enter email address">
-                <span class="bar"></span>
-            </div>
-        </div>
 
-        <!-- Can Edit Row -->
-        <div class="can-edit">
-            <div class="select-wrap">
-                <div class="select">                    
-                    <span>Can Edit</span><i class="fa fa-caret-down" aria-hidden="true"></i>
-                </div>
-                <div class="select-list">
-                    <div class="select-list__item">
-                        Can Edit
-                    </div>
-                    <div class="select-list__item">
-                        Can View
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Checkbox Row -->
-        <div class="share-row">
-            <div class="checkbox">
-                <div class="checkbox__box">
-                    <input type="checkbox" value="on" name="">
+
+            <!-- Moje staro - backup -->
+            <!--<div class="invite-people">
+                <div class="mui-input2">
+                    <label>Invite people:</label>
+
+                    <div class="share-list">
+                        <div class="share-list-item">
+                            <span class="share-list-item__text">jozo@gmail.com</span>
+                            <i class="share-list-item__icon"></i>
+                        </div>
+                        <div class="share-list-item">
+                            <span class="share-list-item__text">mate@gmail.com</span>
+                            <i class="share-list-item__icon"></i>
+                        </div>
+                    </div>
+                    
+                    <input type="text" placeholder="Enter email address">
+                    <span class="bar"></span>
                 </div>
-                <div class="checkbox__span">
-                    <span>Anyone with this link can see it</span>
+            </div> -->
+
+            <!-- Can Edit Row -->
+            <div class="can-edit">
+                <div class="select-wrap">
+                    <div class="select">                    
+                        <span>Can Edit</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="select-list">
+                        <div class="select-list__item">
+                            Can Edit
+                        </div>
+                        <div class="select-list__item">
+                            Can View
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Checkbox Row -->
+            <div class="share-row">
+                <div class="checkbox">
+                    <div class="checkbox__box">
+                        <input type="checkbox" value="on" name="">
+                    </div>
+                    <div class="checkbox__span">
+                        <span>Anyone with this link can see it</span>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /share-main -->
+
+
+        <!-- Who has access Row -->
+        <div class="shared-with-wrap">
+            
+            <div class="shared-with screen-padding">
+                <div class="sw-title">
+                    Who has access
+                </div>
+
+                <div class="sw-list">
+                    <!-- 1 -->
+                    <div class="sw-list__item">
+                        <div class="sw-list__item--email">
+                            mate.lopata@gmail.com
+                        </div>
+                        <div class="sw-list__item--btn">
+                            <div class="btn-edit">
+                                <i class="pen" aria-hidden="true"></i><i class="caret-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2 -->
+                    <div class="sw-list__item">
+                        <div class="sw-list__item--email">
+                            mate.lopata@gmail.com
+                        </div>
+                        <div class="sw-list__item--btn">
+                            <div class="btn-edit">
+                                <i class="pen" aria-hidden="true"></i><i class="caret-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="sw-list__item">
+                        <div class="sw-list__item--email">
+                            mate.lopata@gmail.com
+                        </div>
+                        <div class="sw-list__item--btn">
+                            <div class="btn-edit">
+                                <i class="pen" aria-hidden="true"></i><i class="caret-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 4 -->
+                    <div class="sw-list__item">
+                        <div class="sw-list__item--email">
+                            mate.lopata@gmail.com
+                        </div>
+                        <div class="sw-list__item--btn">
+                            <div class="btn-edit">
+                                <i class="pen" aria-hidden="true"></i><i class="caret-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
 
     </div>

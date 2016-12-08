@@ -33,10 +33,17 @@
 
 
 	.share-bot
-        height: calc(100% - 56px)
-        flex-flow: column nowrap
-        box-sizing()
-        padding: 16px
+		height: calc(100% - 56px)
+		flex-flow: column nowrap
+		box-sizing()
+		overflow: auto
+
+		.share-main
+			box-sizing()
+			padding-top: 16px
+			padding-bottom: 16px
+
+		
 
 	/* Checkbox overwrite */
 	.share-row .checkbox
@@ -65,18 +72,43 @@
 
 .invite-people
 	margin-top: 20px
+	flexbox()
+	flex: 1
+	flex-direction: column
+
+	label
+		color: color4
+		font-size: 11px
+		font-weight: 300
+		letter-spacing: 0.2px
+		padding-bottom: 10px
+
+	input
+		font-size: 14px
+		padding: 5px 10px 10px 5px
+		box-sizing()
+		display: block
+		border: none
+		flex: 1 0 auto
 
 
 	/* Share List */
-	.share-list:empty
+	.crazy-input-wrap:empty
 		display: none
 		margin-top: 0
 	
-	.share-list
+	.crazy-input-wrap
 		width: 100%
 		flexbox()
 		flex-flow: row wrap
 		margin-top: 10px
+		overflow-x: hidden
+
+		.bar
+			width: 100%
+			height: 1px
+			background: color4
+
 
 		.share-list-item
 			flexbox()
@@ -102,6 +134,79 @@
 				background-position: center
 				background-repeat: no-repeat
 				background-size: 14px
+
+
+
+.shared-with
+	flexbox()
+	flex-flow: column nowrap
+	width: 100%
+	border-top: 1px solid color4a12
+	box-sizing()
+	padding-bottom: 16px !important
+	padding-top: 10px !important
+	margin-top: 16px
+
+
+	.sw-title
+		font-size: 16px
+		color: color4a5
+		height: 40px
+		flexbox()
+		align-items: center
+		margin-bottom: 10px
+
+	.sw-list
+		flexbox()
+		flex-flow: column nowrap
+
+		.sw-list__item
+			flexbox()
+			flex-flow: row nowrap
+			align-items: center
+			height: 30px
+			margin-bottom: 5px
+
+			.sw-list__item--email
+				font-size: 14px
+				color: color4
+				width: calc(100% - 46px)
+				ellipsis()
+
+			.sw-list__item--btn
+				flexbox()
+				width: 36px
+				margin-left: 10px
+
+
+
+
+.btn-edit
+	flexbox()
+	flex-flow: row nowrap
+	width: 100%
+
+	i
+		width: 18px
+		height: 18px
+	
+	i.pen
+		background: url(img/explorer/edit.png) no-repeat center
+		background-size: 18px
+
+	i.caret-down
+		background: url(img/explorer/arrow-down.png) no-repeat center
+		background-size: 16px
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -131,4 +236,12 @@
 		background: color4
 
 
-			
+
+
+
+
+
+/* Padding for main content */
+.screen-padding
+	box-sizing()
+	padding: 0 16px
