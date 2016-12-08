@@ -2221,10 +2221,6 @@ input {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.share-row .checkbox-wrap {
-  padding: 0;
-  margin-top: 10px;
-}
 .share-link .share-link__button {
   display: -webkit-box;
   display: -webkit-flex;
