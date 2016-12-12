@@ -2404,6 +2404,81 @@ input {
   background: url("img/explorer/caret-down.png") no-repeat center;
   background-size: 16px;
 }
+.permission-rights {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 16px !important;
+  padding-top: 10px !important;
+  margin-top: 16px;
+}
+.permission-rights .pr-title {
+  font-size: 16px;
+  color: rgba(214,203,203,0.5);
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.permission-rights .pr-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.permission-rights .pr-list .pr-list__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.permission-rights .pr-list .pr-list__item .pr-list__item--option {
+  font-size: 14px;
+  color: #d6cbcb;
+  width: calc(100% - 34px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.permission-rights .pr-list .pr-list__item .pr-list__item--btn:empty {
+  visibility: hidden;
+}
+.permission-rights .pr-list .pr-list__item .pr-list__item--btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.permission-rights .pr-list .pr-list__item .pr-list__item--btn i {
+  width: 24px;
+  height: 24px;
+}
+.permission-rights .pr-list .pr-list__item .pr-list__item--btn i.check {
+  background: url("img/explorer/check.png") no-repeat center;
+  background-size: 24px;
+}
 .mui-input2 {
   display: -webkit-box;
   display: -webkit-flex;
